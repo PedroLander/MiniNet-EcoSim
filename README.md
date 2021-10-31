@@ -13,7 +13,7 @@ while taking some of the ideas and information from those projects.
 <tbody>
   <tr>
     <td><img src="gallery/Figure_1.png"></td>
-    <td><img src="gallery/Figure_2.png"></td>
+    <td><img src="gallery/Video_01.gif"></td>
   </tr>
 </tbody>
 </table>
