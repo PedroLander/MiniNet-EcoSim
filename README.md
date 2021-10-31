@@ -8,10 +8,15 @@ while taking some of the ideas and information from those projects.
 
 
 ### Gallery
-<table><tr>
-<td> <img src="gallery/Figure_1.png" alt="3D development process" style="width: 250px;"/> </td>
-<td> <img src="Ngallery/Figure_2.png" alt="3D development process" style="width: 250px;"/> </td>
-</tr></table>
+
+<table style="border-color:white;">
+<tbody>
+  <tr>
+    <td><img src="gallery/Figure_1.png"></td>
+    <td><img src="gallery/Figure_2.png"></td>
+  </tr>
+</tbody>
+</table>
 
 ### References
 
