@@ -1,10 +1,17 @@
 # PatchEcoSim
-Ecological simulation in 3D of a piece of terrain
+### Ecological simulation in 3D of a piece of terrain
+The aim of this project is to make an animated simulation of the 
+ecological network happening in a place. There are lot of scientific
+methods for achieveng great mimicking of the real world so, instead, 
+this project focuses on making the simulation visually attractive 
+while taking some of the ideas and information from those projects.
 
-![3D development process](gallery/Figure_1.png)
 
-![3D development process](gallery/Figure_2.png)
-
+### Gallery
+<table><tr>
+<td> <img src="gallery/Figure_1.png" alt="3D development process" style="width: 250px;"/> </td>
+<td> <img src="Ngallery/Figure_2.png" alt="3D development process" style="width: 250px;"/> </td>
+</tr></table>
 
 ### References
 
