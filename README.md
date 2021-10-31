@@ -9,14 +9,8 @@ while taking some of the ideas and information from those projects.
 
 ### Gallery
 
-<table style="border-color:white;">
-<tbody>
-  <tr>
-    <td><img src="gallery/Figure_1.png"></td>
-    <td><img src="gallery/Video_01.gif"></td>
-  </tr>
-</tbody>
-</table>
+<img src="gallery/Figure_01.png">
+
 
 ### References
 
