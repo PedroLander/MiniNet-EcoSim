@@ -22,10 +22,12 @@
 #  
 #  
 
-from Visualization import *
-from Entities import *
 import noise
 import numpy as np
+from csv import reader
+
+from Visualization import *
+from Entities import *
 
 # Terrain Generation Properties
 terrain_gen_properties = {
@@ -61,15 +63,23 @@ def main(args):
 
         entities = dict()
 
-        Entities.generate_entity_class(terrain_gen_properties, entities, 1,"sheep", 'o', "white", 10, 1)
-        Entities.generate_entities(layer1, terrain_gen_properties, entities[1]["individuals"], 10)
+        # Read the file with the classes parameters
+        # skip first line i.e. read header first and then iterate over each row od csv as a list
+        with open('entity_classes.csv', 'r') as read_obj:
+            csv_reader = reader(read_obj)
+            header = next(csv_reader)
+            idc = 0
 
-        Entities.generate_entity_class(terrain_gen_properties, entities, 2,"wolves", '^', "black", 10, 1)
-        Entities.generate_entities(layer1, terrain_gen_properties, entities[2]["individuals"], 5)
-
-        Entities.generate_entity_class(terrain_gen_properties, entities, 3,"plant", 'o', "green", 10, .4)
-        Entities.generate_entities(layer1, terrain_gen_properties, entities[3]["individuals"], 500)
-        
+            # Check file as empty
+            if header != None:
+                # Iterate over each row after the header in the csv
+                for row in csv_reader:
+                        class_attr = {header[attr]:row[attr] for attr in range(len(header))}
+                        Entities.generate_entity_class(entities, class_attr, idc)
+                        Entities.generate_entities(layer1, terrain_gen_properties, entities[idc]["individuals"], int(entities[idc]["n_init"]))
+                        idc += 1
+        #closes the file
+        read_obj.close()
         Visualization.plot_sim(X, Y, layer1, entities)
 
         return 0

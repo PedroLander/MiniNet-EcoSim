@@ -25,6 +25,6 @@ class Visualization():
                         xs = [entities[entity_class]["individuals"][entity]["coords"][0] for entity in entities[entity_class]["individuals"].keys()]
                         ys = [entities[entity_class]["individuals"][entity]["coords"][1] for entity in entities[entity_class]["individuals"].keys()]
                         zs = [entities[entity_class]["individuals"][entity]["coords"][2] for entity in entities[entity_class]["individuals"].keys()]
-                        ax.scatter(xs, ys, zs, marker=entities[entity_class]["symbol"], c=entities[entity_class]["colour"], s=entities[entity_class]["size"], alpha=entities[entity_class]["alpha"])
+                        ax.scatter(xs, ys, zs, marker=entities[entity_class]["symbol"], c=entities[entity_class]["colour"], s=int(entities[entity_class]["size"]), alpha=float(entities[entity_class]["alpha"]))
 
                 plt.show()

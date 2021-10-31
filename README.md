@@ -16,3 +16,5 @@ I have followed tutorials and fetched code from:
   https://www.howtobuildsoftware.com/index.php/how-do/VXR/matlab-matplotlib-plot-surface-display-the-maximum-surface-in-matplotlib
 * Matplotlib documentation
   https://matplotlib.org/stable/gallery/mplot3d/scatter3d.html
+* Shanky in Automateinfra
+  https://adamtheautomator.com/python-read-file/
