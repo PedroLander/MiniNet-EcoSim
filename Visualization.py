@@ -15,9 +15,9 @@ class Visualization():
         def plot_sim(X, Y, surface, entities):
                 fig = plt.figure()
                 ax = fig.add_subplot(projection='3d')
-                ax.set(facecolor="grey")
+                #ax.set(facecolor="grey")
 
-                surf1 = ax.plot_surface(X, Y, surface, cstride=2, rstride=1, linewidth=0, antialiased=False, alpha=0.4)
+                surf1 = ax.plot_surface(X, Y, surface, cstride=2, rstride=1, linewidth=0, color="#E4D8C8", antialiased=False, alpha=0.4)
 
                 #  Plot the entities of each species
                 #  Here we search the coordinates of each entity of each class
