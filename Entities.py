@@ -22,5 +22,5 @@ class Entities():
                         y = random.randint(0,terrain_gen_properties["shape"][1]-1)
                         new_entity["coords"] = [x,
                                                 y,
-                                                surface[y][x]+.005] #entity laying on the surface
+                                                surface[y][x]+.002] #entity laying on the surface
                         individuals_pool[random.randint(0,1000)] = new_entity

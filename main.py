@@ -25,9 +25,11 @@
 import noise
 import numpy as np
 from csv import reader
+import matplotlib.animation as animation
 
 from Visualization import *
 from Entities import *
+from Simulation import *
 
 # Terrain Generation Properties
 terrain_gen_properties = {
@@ -80,34 +82,21 @@ def main(args):
                         idc += 1
         #closes the file
         read_obj.close()
-        Visualization.plot_sim(X, Y, layer1, entities)
+        
+        fig = Visualization.plot_sim(X, Y, layer1, entities)
+                
+        while True:
+        # show animation
+                ani = animation.FuncAnimation(
+                    fig,
+                    Simulation.move_entities,
+                    fargs=(X, Y, layer1, entities, fig),
+                    frames=10,
+                    interval=500,
+                    save_count=50)
 
-        return 0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                plt.show()
+        
 
 
 

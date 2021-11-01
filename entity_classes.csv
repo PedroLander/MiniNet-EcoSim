@@ -1,4 +1,4 @@
 species,symbol,colour,size,alpha,n_init
 sheep,o,white,10,1,10
-wolves,^,black,10,1,10
-trees,o,green,20,.5,500
+wolves,^,black,10,1,8
+trees,o,green,15,.8,300
