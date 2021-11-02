@@ -1,6 +1,6 @@
-# PatchEcoSim
+# MiniNet EcoSim
 ### Ecological simulation in 3D of a piece of terrain
-The aim of this project is to make an animated simulation of the 
+The aim of this project is to make an animated simulation of a small
 ecological network happening in a place. There are lot of scientific
 methods for achieveng great mimicking of the real world so, instead, 
 this project focuses on making the simulation visually attractive 
@@ -22,5 +22,3 @@ I have followed tutorials and fetched code from:
   https://www.howtobuildsoftware.com/index.php/how-do/VXR/matlab-matplotlib-plot-surface-display-the-maximum-surface-in-matplotlib
 * Matplotlib documentation
   https://matplotlib.org/stable/gallery/mplot3d/scatter3d.html
-* Shanky in Automateinfra
-  https://adamtheautomator.com/python-read-file/
